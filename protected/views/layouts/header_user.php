@@ -7,18 +7,10 @@
 						<div class="rCol">
 					
 							<div id="head_user_info"> 
-<div class="buttons">
-		<?php $this->widget('zii.widgets.CMenu', array(
-				'items'=>Array(
-						array('label'=>'Добавить дефект', 'url'=>array('/holes/add'), 'linkOptions'=>array('class'=>'profileBtn')),
-						array('label'=>'Мои ямы', 'url'=>array('/holes/personal'), 'linkOptions'=>array('class'=>'profileBtn')),
-						array('label'=>'Мой участок', 'url'=>array('/holes/myarea'), 'linkOptions'=>array('class'=>'profileBtn')),
-						array('label'=>'Изменить личные данные', 'url'=>array('/profile/update'), 'linkOptions'=>array('class'=>'profileBtn')),
-						
-					),
-				'htmlOptions'=>array('class'=>'usermenu'),
-			));?>
-		</div>							
+								<div class="counter">
+									<?php echo Y::declOfNum($this->user->usermodel->holes_cnt, array('дефект', 'дефекта', 'дефектов')); ?> / <?php echo Y::declOfNum($this->user->usermodel->holes_fixed_cnt, array('отремонтирован', 'отремонтировано', 'отремонтировано')); ?>		
+								</div>
+								
 	<div class="photo">
 		<?php if($this->user->userModel->relProfile && $this->user->userModel->relProfile->avatar) echo CHtml::image($this->user->userModel->relProfile->avatar_folder.'/'.$this->user->userModel->relProfile->avatar); ?>
 	</div>
@@ -28,10 +20,19 @@
 			<a target="_blank" href="http://"></a>
 		</div>
 	</div>
-	<div class="counter">
-		<?php echo Y::declOfNum($this->user->usermodel->holes_cnt, array('дефект', 'дефекта', 'дефектов')); ?> / <?php echo Y::declOfNum($this->user->usermodel->holes_fixed_cnt, array('отремонтирован', 'отремонтировано', 'отремонтировано')); ?>		
-		
-	</div>
+	<div class="buttons">
+			<?php $this->widget('zii.widgets.CMenu', array(
+				'items'=>Array(
+						array('label'=>'Добавить дефект', 'url'=>array('/holes/add'), 'linkOptions'=>array('class'=>'profileBtn')),
+						array('label'=>'Мои ямы', 'url'=>array('/holes/personal'), 'linkOptions'=>array('class'=>'profileBtn')),
+						array('label'=>'Мой участок', 'url'=>array('/holes/myarea'), 'linkOptions'=>array('class'=>'profileBtn')),
+						array('label'=>'Изменить личные данные', 'url'=>array('/profile/update'), 'linkOptions'=>array('class'=>'profileBtn')),
+						
+					),
+				'htmlOptions'=>array('class'=>'usermenu'),
+			));?>
+		</div>	
+	
 	<?php if ($this->user->isAdmin) {
 	echo '<br/>';
 	$this->widget('zii.widgets.CMenu', array(

@@ -133,7 +133,7 @@
 			</ul>
 			<ul class="small-menu">
 				<li>Информація:</li>
-				<li><a href="#">Допомогти проекту</a></li>
+				<li><a href="<?php echo $this->createUrl('site/page',array('view'=>'donate'))?>">Допомогти проекту</a></li>
 				<li><a href="http://ukryama.info/" target="_blank">Спільнота</a></li>
 				<li><a href="<?php echo $this->createUrl('site/page',array('view'=>'partners'))?>">Партнери</a></li>
 				<li><a href="<?php echo $this->createUrl('site/page',array('view'=>'thanks'))?>">Подяка</a></li>
@@ -295,38 +295,6 @@
 		</div>
 	</div>
 	
-<!--	<script type="text/javascript">
-                var reformalOptions = {
-                        project_id: 43983,
-                        project_host: "rosyama.reformal.ru",
-                        force_new_window: false,
-                        tab_alignment: "left",
-                        tab_top: "316",
-                        tab_image_url: "http://reformal.ru/files/images/buttons/reformal_tab_orange.png"
-                };
-                (function() {
-                        if ('https:' == document.location.protocol) return;
-                        var script = document.createElement('script');
-                        script.type = 'text/javascript';
-                        script.src = 'http://media.reformal.ru/widgets/v1/reformal.js';
-                        document.getElementsByTagName('head')[0].appendChild(script);
-                })();
-        </script>
-               	-->
-	
-<!--	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-21943923-3']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script> 
-	-->
 	<? if (!$this->user->isGuest && $flash=$this->user->getFlash('user')):?>
 		<div id="addDiv">
 			<div id="fon">

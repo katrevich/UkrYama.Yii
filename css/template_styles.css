@@ -186,13 +186,25 @@ textarea{
 			width:225px;
 		}
 		
-			.auth .name {
-				float: right;
-				overflow: hidden;
-				width: 220px;
-				padding-top: 2px;
-				white-space:nowrap;
-				text-align:right;
+			.container .auth .name {
+				position: absolute;
+				width: auto !important;
+				left:0px;
+				top:104px;
+			}
+			.auth .name a{
+				position: relative;
+				padding:0 20px 0 0;
+			}
+			.auth .name a:before{
+				content:'';
+				position: absolute;
+				width:14px;
+				height:15px;
+				background: url(../images/log-out-icon.png) 0 0 no-repeat;
+				top:50%;
+				right:0px;
+				margin:-7px 0 0;
 			}
 			
 				.auth .name p {
@@ -219,6 +231,7 @@ textarea{
 				margin-left: 6px;
 				padding-top: 12px;
 				vertical-align: middle;
+				display:none;
 			}
 			
 			.auth a, .auth a:hover {
@@ -355,17 +368,18 @@ textarea{
 		}
 		
 		.head #head_user_info .info {
-			margin: 0 0 16px 80px;
+			margin: 0 0 9px 80px;
 		}
 		
 		.head #head_user_info .counter {
-			font-size: 1.38em;
-			font-weight: bold;
-			margin-left: 80px;
+			font-size: 14px;
+			font-weight: normal;
+			float:right;
 		}
 		
 		.head #head_user_info .buttons {
-			float: right;
+			float: left;
+			margin:0 0 0 15px;
 			padding-top: 4px;
 		}
 
@@ -569,7 +583,7 @@ ul.usermenu li.active .profileBtn{background: #f88100;}
 }
 .mainCols .lCol{
 	float:right;
-	width:215px;
+	width:225px;
 }
 .mainCols .rCol{
 	float:left;
@@ -1871,6 +1885,23 @@ div.form #user-groups-passrequest-form label{
 }
 
 
+.news-list.sprav-list{
+	padding:0 0 0 40px;
+	font-size: 14px;
+	-moz-column-count: 2;
+	-moz-column-gap: 0;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0;
+	column-count: 2;
+	column-gap: 0;
+	margin:-30px 0 0;
+}
+.news-list.sprav-list .news-item{
+	margin:0;
+}
+
+
+
 .bx-yandex-search-form .textInput{
 	width:450px;
 	height:23px;
@@ -2009,16 +2040,17 @@ div.form #user-groups-passrequest-form label{
 }
 
 #holes_selectors{
-	padding:7px;
+	padding:8px;
 	background: #eae7d2;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	width:945px;
+	margin:-6px 0 20px;
 }
 
 #holes_selectors select{
-	height:23px;
+	height:25px;
 	padding:1px;
 }
 #holes_selectors > div{
@@ -2074,4 +2106,45 @@ h2+.bx-yandex-view-layout #ymapcontainer{
   border-radius:3px;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
+}
+
+
+#contact-form label{
+	float:left;
+	margin: 0 26px 0 0;
+	width:295px;
+}
+#contact-form .buttons{
+	padding-left:321px;
+}
+
+
+a.button{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.1em;
+	height:25px;
+	line-height: 24px;
+	background-color: #ae85a3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6a6bd), to(#916284));
+  background-image: -webkit-linear-gradient(top, #c6a6bd, #916284);
+  background-image:    -moz-linear-gradient(top, #c6a6bd, #916284);
+  background-image:      -o-linear-gradient(top, #c6a6bd, #916284);
+  background-image:         linear-gradient(to bottom, #c6a6bd, #916284);
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border:none;
+	cursor: pointer;
+	padding:0 9px;
+	color:#fff !important;
+	margin:0;
+}
+*+ html a.button{display:inline;zoom:1;}
+
+.sprav-detail h2{
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 22px;
 }
