@@ -52,7 +52,7 @@ $this->pageTitle=Yii::app()->name . ' :: Мой участок';
 	<?php $this->endWidget(); ?>		
 
 <div class="lCol">
-<div style="text-align:right;">
+<div class="select-all-wrap">
 <?php echo CHtml::checkBox('selectAll', false, Array('id'=>'selectAll','class'=>'state_check')); ?><?php echo CHtml::label('Выбрать все', 'selectAll'); ?>
 </div>
 <?php $this->widget('application.widgets.userAreaMap.userAreaMapWidget',Array('data'=>Array('area'=>$area))); ?>

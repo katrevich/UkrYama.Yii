@@ -42,8 +42,9 @@ span.required { color: red; width: 6px; float:right; margin:0 -10px 0 0;}
 
 .addSubmit .container {
 	border-top: 1px solid #fff;
-	padding: 17px 0 0 320px;
+	padding: 17px 0 0 0;
 	width: auto;
+	text-align: center;
 }
 
 .addSubmit p {

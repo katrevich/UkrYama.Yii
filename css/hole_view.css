@@ -1,4 +1,4 @@
-div#ymapcontainer { border: 1px solid #d0d5d9; height: 300px; width: 280px; float:left; margin:0 37px 20px 0;}
+div#ymapcontainer { border: 1px solid #d0d5d9; height: 300px; width: 225px; float:left; margin:0 37px 20px 0;}
 div#ymapcontainer_big { display: none; position: relative; margin:0 0 25px; border-top: 0; z-index: 5; background-color: white; }
 div#ymapcontainer_big span.close { color: #333; font-size: 1.5em; font-weight: bold; cursor: pointer; padding: 0 5px; }
 div#ymapcontainer_big span.close:hover {color:#edb209}

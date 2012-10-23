@@ -2089,7 +2089,7 @@ h2+.bx-yandex-view-layout #ymapcontainer{
 	padding-top:17px;
 	border-top: 1px solid #d0d5d9;
 }
-#userGroups-container div.form input[type="submit"]{
+#user-groups-misc-form input[type="submit"]{
 	font-size: 22px;
 	width:auto;
 	padding:0 50px;
@@ -2108,14 +2108,24 @@ h2+.bx-yandex-view-layout #ymapcontainer{
   -webkit-border-radius:3px;
 }
 
+#contact-form{
+	width:360px;
+	float:left;
+	margin: 0 40px 0 0;
+}
 
 #contact-form label{
-	float:left;
-	margin: 0 26px 0 0;
-	width:295px;
+	float:none;
+	text-align: left;
+}
+#contact-form #ContactForm_body{
+	width:358px;
+}
+#contact-form #ContactForm_subject{
+	width:352px;
 }
 #contact-form .buttons{
-	padding-left:321px;
+	padding-left:0;
 }
 
 
@@ -2147,4 +2157,9 @@ a.button{
 	font-weight: normal;
 	line-height: 1;
 	margin: 0 0 22px;
+}
+
+
+.MultiFile-wrap{
+	overflow: hidden;
 }

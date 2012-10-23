@@ -62,7 +62,7 @@ $this->pageTitle=Yii::app()->name . ' :: Мои ямы';
 			
 	<?php $this->endWidget(); ?>	
 <div class="lCol">
-	<div style="text-align:right;">
+	<div  class="select-all-wrap">
 			<?php echo CHtml::checkBox('selectAll', false, Array('id'=>'selectAll','class'=>'state_check')); ?><?php echo CHtml::label('Выбрать все', 'selectAll'); ?>
 			</div>
 	<div id="holes_select_list">
