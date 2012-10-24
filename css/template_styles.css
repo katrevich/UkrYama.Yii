@@ -2163,3 +2163,51 @@ a.button{
 .MultiFile-wrap{
 	overflow: hidden;
 }
+
+
+.progress .edit{
+	margin:0 0 5px;
+}
+.progress .edit a{
+	font-size: 12px;
+}
+.progress .edit a + a{
+	color:#db0000;
+	position: relative;
+	padding:0 0 0 12px;
+	margin:0 0 0 12px;
+}
+.progress .edit a + a:before{
+	content: '';
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJBJREFUeNpivM0ABvxA/AWI/zIgADMQc4LEmYCEEBAfBuJFUAmYgvlAvAtkAEjRRyC+DMRRUIVsUAWxQHwfZBIL1Io4qAkghTZALAfEy6DifxlvI9wAMuEGECsC8SMgVgXiXyAJJiQ3zEFSIAe1khmmiBnJDcugJixDciMzC9T7BshuQHKjChDzMBITTgABBgAtLiDOrJoWxgAAAABJRU5ErkJggg==) 0 0 no-repeat;
+	width:9px;
+	height:9px;
+	display: block;
+	position: absolute;
+	top:4px;
+	left:0px;
+}
+
+.printDeclaration{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	height:37px;
+	line-height: 36px;
+	background-color: #ae85a3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6a6bd), to(#916284));
+  background-image: -webkit-linear-gradient(top, #c6a6bd, #916284);
+  background-image:    -moz-linear-gradient(top, #c6a6bd, #916284);
+  background-image:      -o-linear-gradient(top, #c6a6bd, #916284);
+  background-image:         linear-gradient(to bottom, #c6a6bd, #916284);
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border:none;
+	cursor: pointer;
+	padding:0 20px;
+	color:#fff !important;
+	margin:0 0 35px;
+	border:none !important;
+}
+*+ html .printDeclaration{display:inline;zoom:1;}
