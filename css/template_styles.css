@@ -2027,8 +2027,9 @@ div.form #user-groups-passrequest-form label{
 
 
 
-#holes-form{
-
+#holes-form{}
+#holes-form #ymapcontainer{
+	width:960px;
 }
 #holes-form .lCol{
 	width:auto;
