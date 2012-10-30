@@ -123,3 +123,8 @@ input#address_inp{
 	color:#9aa3ab;
 	font-style: normal;
 }
+
+
+h2 + .bx-yandex-view-layout, h2 + .bx-yandex-view-layout #ymapcontainer{
+	width:960px;
+}
